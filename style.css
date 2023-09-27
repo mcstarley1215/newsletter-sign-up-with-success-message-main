@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.attribution { 
+  font-size: 11px; text-align: center; 
+}
+    
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
+
+.desktop {
+  display: block;
+  width: auto;
+  height: 100%;
+}
+
+.mobile {
+  display: none;
+}
+
+body {
+  background-color: hsl(234, 29%, 20%);
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  border-radius: 20px;
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  flex-direction: row;
+  margin: 1rem;
+}
+
+.sign-up-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 3rem;
+}
+
+.image-container {
+  margin: 1rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin-bottom: 1.5rem;
+}
+
+.header-title {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  color: hsl(234, 29%, 20%);
+}
+
+.check-list-div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+  width: 90%;
+}
+
+.check-list {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 0.7rem;
+}
+
+.email-div {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+}
+
+.email-validation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.email-text {
+  font-size: 12px;
+  font-weight: 700;
+  color: hsl(234, 29%, 20%);
+  margin-bottom: 0.5rem;
+}
+
+.validate-email {
+  font-size: 12px;
+  font-weight: 700;
+  color: hsl(4, 100%, 67%);
+  margin-bottom: 0.5rem;
+}
+
+input {
+  border: 1px solid hsl(231, 7%, 60%, 0.5);
+  border-radius: 10px;
+  height: 3rem;
+  font-size: 1rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.subscribe {
+  background-color: hsl(234, 29%, 20%);
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  height: 3rem;
+  border: none;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.subscription-completed {
+  background-color: white;
+  border-radius: 20px;
+  color: hsl(234, 29%, 20%);
+  width: 25rem;
+  padding: 3rem;
+}
+
+.subscription-completed img {
+  margin-bottom: 1.5rem;
+}
+
+.subscription-completed h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.confirmation {
+  font-size: 13px;
+  margin-bottom: 2rem;
+}
+
+.dismiss-button {
+  padding: 1rem 6.1rem 1rem 6.1rem;
+  border: none;
+  border-radius: 10px;
+  background-color: hsl(234, 29%, 20%);
+  color: hsl(0, 0%, 100%);
+}
+
+.subscribe:active,
+.dismiss-button:active {
+  background-color: hsl(4, 100%, 67%);
+}
+
+.sign-up-div,
+.image-container {
+  display: flex;
+}
+
+.subscription-completed {
+  display: none;
+}
+
+@media screen and (min-width: 375px) {
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .subsription-completed {
+    display: none;
+  }
+
+  .container {
+    border-radius: 0;
+    flex-direction: column-reverse;
+    width: 23.4rem;
+  }
+
+  .sign-up-div {
+    margin-left: 0;
+    align-items: center;
+  }
+
+  .image-container {
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+  }
+
+  .email-div {
+    margin-bottom: 2rem;
+  }
+
+  .subscription-completed {
+    border-radius: 0;
+    height: 100%;
+    margin: 0;
+  }
+
+  .confirmation {
+    font-size: 20px;
+    margin-bottom: 20rem;
+  }
+ }
+
+ @media screen and (min-width: 768px) {
+  .desktop {
+    display: block;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .container {
+    border-radius: 20px;
+    flex-direction: row;
+    width: 55rem;
+  }
+
+  .sign-up-div {
+    margin-left: 2rem;
+    justify-content: center;
+  }
+
+  .image-container {
+    margin: 1rem;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  .email-div {
+    margin-bottom: 0;
+  }
+
+  .subscription-completed {
+    background-color: white;
+    border-radius: 20px;
+    color: hsl(234, 29%, 20%);
+    width: 25rem;
+    height: auto;
+    padding: 3rem;
+  }
+
+  .confirmation {
+    font-size: 13px;
+    margin-bottom: 2rem;
+  }
+  
+ }
